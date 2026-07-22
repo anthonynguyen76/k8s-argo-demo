@@ -1,11 +1,11 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: web
-  namespace: training-yaml
+  name: demo-app
+  namespace: gitops-demo
 spec:
   selector:
-    app: web
+    app: demo-app
   ports:
     - port: 80
       targetPort: 80
